@@ -1,0 +1,13 @@
+function replaceAll(str, find, replace){
+	return str.replace(new RegExp(find, 'g'), replace);
+}
+
+var keywords = ['华为', '跪久', '袁隆平','习近平'];
+
+var result = body;
+
+keywords.forEach(function(k) {
+	result = replaceAll(result, k, '');
+});
+
+result;
