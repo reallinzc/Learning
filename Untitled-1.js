@@ -1,3 +1,5 @@
 var body = $response.body;
-body['packageName'] = "asdasd"
+let obj = JSON.parse(body)
+obj.packageName = "asdfdasd"
+body = JSON.stringify(obj)
 $done({body});
