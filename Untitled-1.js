@@ -1,3 +1,3 @@
-let headers = $response.headers;
-header['packageName']="asdasd"
-$done({headers});
+var body = $response.body;
+body['packageName']="asdasd"
+$done({body});
