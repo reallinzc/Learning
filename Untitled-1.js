@@ -1,3 +1,3 @@
 var body = $response.body;
-body['packageName']="asdasd"
+body['packageName'] = "asdasd"
 $done({body});
