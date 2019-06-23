@@ -1,5 +1,5 @@
 let body = $response.body
-let url = $reponse.url
+let url = $response.url
 body = JSON.parse(body)
 body.advertisement_num = 0;
 body.advertisement_info = [];
