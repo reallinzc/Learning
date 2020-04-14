@@ -7,7 +7,7 @@ URL-REGEX,^http:\/\/www\.bldimg\.com\/splash\/,REJECT
 
 
 [MITM]
-%APPEND% *.bldimg.com
+hostname = %APPEND% *.bldimg.com
 
 [Script]
 # blued
