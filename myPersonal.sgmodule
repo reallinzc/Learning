@@ -1,0 +1,15 @@
+#!name=Personnal Userful
+#!desc=Crontab Pack
+#!system=ios
+
+[Script]
+# > 中国联通 App 签到 by chavyleung
+type=cron,cronexp=30 8,23 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js
+
+# > JD 签到 by NoByDa
+type=cron,cronexp=0 1,6 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+
+# > 腾讯视频（网页+App）签到 by chavyleung
+type=cron,cronexp=2 6 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js
+
