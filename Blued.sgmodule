@@ -1,0 +1,18 @@
+#!name=Blued
+#!desc=unlock vip feature get photo and remove ads
+#!system=ios
+
+[URL Rewrite]
+URL-REGEX,^http:\/\/www\.bldimg\.com\/splash\/,REJECT
+
+
+[MITM]
+hostname = %APPEND% *.bldimg.com,106.75.55.121, 106.75.33.126, *.blued.cn
+
+[Script]
+# 通知查看闪照
+blued闪照 = script-path=JS/bluedPhoto.js,pattern=https:\/\/burn-chatfiles\.bldimg\.com\/\d{4}\/,type=http-request
+#unlock vip
+破解bluedvip= type=http-response,pattern="^https:\/\/(([\d{1,3}\.]{1,3}\.){3}\d{1,3}|argo.blued.cn)\/blued\/config",requires-body=1,max-size=-1,script-path=JS/BluedVip.js
+#私人信息
+破解bluedvip= type=http-response,pattern="^https:\/\/(([\d{1,3}\.]{1,3}\.){3}\d{1,3}|argo.blued.cn)\/users\/\d*\?is_living",requires-body=1,max-size=-1,script-path=JS/私人照.js
