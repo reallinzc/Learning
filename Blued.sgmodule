@@ -15,4 +15,4 @@ blued闪照 = script-path=https://raw.githubusercontent.com/reallinzc/Learning/m
 #unlock vip
 破解bluedvip= type=http-response,pattern="^https:\/\/(([\d{1,3}\.]{1,3}\.){3}\d{1,3}|argo.blued.cn)\/blued\/config",requires-body=1,max-size=-1,script-path=https://github.com/reallinzc/Learning/raw/master/JS/BluedVip.js
 #私人信息
-破解bluedvip= type=http-response,pattern="^https:\/\/(([\d{1,3}\.]{1,3}\.){3}\d{1,3}|argo.blued.cn)\/users\/\d*\?is_living",requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/reallinzc/Learning/master/JS/info.js
+Private info = type=http-response,pattern="^https:\/\/(([\d{1,3}\.]{1,3}\.){3}\d{1,3}|argo.blued.cn)\/users\/\d*\?is_living",requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/reallinzc/Learning/master/JS/info.js
